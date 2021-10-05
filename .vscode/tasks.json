@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "wasm build",
-            "command": "wasm-pack build --target bundler",
+            "command": "wasm-pack build --target web",
             "type": "shell",
             "presentation": {
                 "group": "main",
