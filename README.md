@@ -1,3 +1,12 @@
+vs code tasks : 
+1. wasm build
+
+``` bash
+cd www
+npm install
+```
+
+2.  
 <div align="center">
 
   <h1><code>wasm-pack-template</code></h1>
