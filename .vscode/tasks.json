@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "wasm build",
-            "command": "wasm-pack build --target web",
+            "command": "wasm-pack build",
             "type": "shell",
             "presentation": {
                 "group": "main",
@@ -13,7 +13,21 @@
                 "panel": "shared",
                 "showReuseMessage": true,
                 "clear": false
-              }
+            }
+        },
+        {
+            "label": "wasm test",
+            "command": "wasm-pack test --chrome",
+            "type": "shell",
+            "presentation": {
+                "group": "main",
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
         },
         {
             "label": "build site",
@@ -27,7 +41,7 @@
                 "panel": "shared",
                 "showReuseMessage": true,
                 "clear": false
-              }
+            }
         },
         {
             "label": "run site",
@@ -41,7 +55,7 @@
                 "panel": "shared",
                 "showReuseMessage": true,
                 "clear": false
-              }
+            }
         }
     ]
 }
