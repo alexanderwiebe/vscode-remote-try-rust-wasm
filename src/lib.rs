@@ -44,3 +44,17 @@ pub fn convert(from: &str, to: &str, value: f64) -> f64 {
     let to = units[to];
     return value * from / to;
 }
+
+#[wasm_bindgen]
+extern "C" {
+    pub type Quacks;
+
+    #[wasm_bindgen(structural, method)]
+    pub fn quack(this: &Quacks) -> String;
+}
+
+#[wasm_bindgen]
+pub fn make_em_quack_to_this(duck: &Quacks) {
+    let _s = duck.quack();
+    // ...
+}
